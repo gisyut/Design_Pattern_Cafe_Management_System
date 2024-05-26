@@ -76,7 +76,7 @@ class FinancialStatementSingleton:
         self.total_amount += amount
         print(f"Updated financial statement: total amount is now {self.total_amount}")
 
-# Observer 패턴: 결제 내역 관찰
+# Observer 패턴: 결제 내역 관찰     김대현님이 올려주신 옵저버 패턴을 약간 변형 하여 사용
 class PaymentObserver(ABC):
     @abstractmethod
     def update(self, amount):
